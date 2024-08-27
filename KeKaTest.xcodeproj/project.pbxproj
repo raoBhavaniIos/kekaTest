@@ -1,0 +1,647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D116F1752C7E454E00621BC6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = D116F1742C7E454E00621BC6 /* Reachability.swift */; };
+		D116F1772C7E65F700621BC6 /* ArticleUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D116F1762C7E65F700621BC6 /* ArticleUIView.swift */; };
+		D13985DC2C7E6D1500FDC28C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D13985DA2C7E6D1500FDC28C /* Main.storyboard */; };
+		D14036C12C7E3DB10023696B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14036C02C7E3DB10023696B /* ApiService.swift */; };
+		D14036C52C7E3FD70023696B /* ArticleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14036C42C7E3FD70023696B /* ArticleViewModel.swift */; };
+		D15FC25E2C7DDECE005617D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15FC25D2C7DDECE005617D4 /* AppDelegate.swift */; };
+		D15FC2602C7DDECE005617D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15FC25F2C7DDECE005617D4 /* SceneDelegate.swift */; };
+		D15FC2682C7DDECE005617D4 /* KeKaTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D15FC2662C7DDECE005617D4 /* KeKaTest.xcdatamodeld */; };
+		D15FC26A2C7DDED5005617D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D15FC2692C7DDED5005617D4 /* Assets.xcassets */; };
+		D15FC26D2C7DDED5005617D4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = D15FC26C2C7DDED5005617D4 /* Base */; };
+		D15FC2782C7DDED7005617D4 /* KeKaTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15FC2772C7DDED7005617D4 /* KeKaTestTests.swift */; };
+		D15FC2822C7DDED7005617D4 /* KeKaTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15FC2812C7DDED7005617D4 /* KeKaTestUITests.swift */; };
+		D15FC2842C7DDED7005617D4 /* KeKaTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15FC2832C7DDED7005617D4 /* KeKaTestUITestsLaunchTests.swift */; };
+		D1BEDB402C7E43E700305BB3 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BEDB3F2C7E43E700305BB3 /* CoreDataManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D15FC2742C7DDED7005617D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D15FC2522C7DDECE005617D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D15FC2592C7DDECE005617D4;
+			remoteInfo = KeKaTest;
+		};
+		D15FC27E2C7DDED7005617D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D15FC2522C7DDECE005617D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D15FC2592C7DDECE005617D4;
+			remoteInfo = KeKaTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D116F1742C7E454E00621BC6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		D116F1762C7E65F700621BC6 /* ArticleUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleUIView.swift; sourceTree = "<group>"; };
+		D13985DB2C7E6D1500FDC28C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D14036C02C7E3DB10023696B /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		D14036C42C7E3FD70023696B /* ArticleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleViewModel.swift; sourceTree = "<group>"; };
+		D15FC25A2C7DDECE005617D4 /* KeKaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeKaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15FC25D2C7DDECE005617D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D15FC25F2C7DDECE005617D4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D15FC2672C7DDECE005617D4 /* KeKaTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KeKaTest.xcdatamodel; sourceTree = "<group>"; };
+		D15FC2692C7DDED5005617D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D15FC26C2C7DDED5005617D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D15FC26E2C7DDED5005617D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D15FC2732C7DDED7005617D4 /* KeKaTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeKaTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15FC2772C7DDED7005617D4 /* KeKaTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeKaTestTests.swift; sourceTree = "<group>"; };
+		D15FC27D2C7DDED7005617D4 /* KeKaTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeKaTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D15FC2812C7DDED7005617D4 /* KeKaTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeKaTestUITests.swift; sourceTree = "<group>"; };
+		D15FC2832C7DDED7005617D4 /* KeKaTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeKaTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D1BEDB3F2C7E43E700305BB3 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D15FC2572C7DDECE005617D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15FC2702C7DDED7005617D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15FC27A2C7DDED7005617D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D15FC2512C7DDECE005617D4 = {
+			isa = PBXGroup;
+			children = (
+				D15FC25C2C7DDECE005617D4 /* KeKaTest */,
+				D15FC2762C7DDED7005617D4 /* KeKaTestTests */,
+				D15FC2802C7DDED7005617D4 /* KeKaTestUITests */,
+				D15FC25B2C7DDECE005617D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D15FC25B2C7DDECE005617D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D15FC25A2C7DDECE005617D4 /* KeKaTest.app */,
+				D15FC2732C7DDED7005617D4 /* KeKaTestTests.xctest */,
+				D15FC27D2C7DDED7005617D4 /* KeKaTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D15FC25C2C7DDECE005617D4 /* KeKaTest */ = {
+			isa = PBXGroup;
+			children = (
+				D15FC25D2C7DDECE005617D4 /* AppDelegate.swift */,
+				D13985DA2C7E6D1500FDC28C /* Main.storyboard */,
+				D15FC25F2C7DDECE005617D4 /* SceneDelegate.swift */,
+				D14036C02C7E3DB10023696B /* ApiService.swift */,
+				D14036C42C7E3FD70023696B /* ArticleViewModel.swift */,
+				D116F1762C7E65F700621BC6 /* ArticleUIView.swift */,
+				D1BEDB3F2C7E43E700305BB3 /* CoreDataManager.swift */,
+				D116F1742C7E454E00621BC6 /* Reachability.swift */,
+				D15FC2692C7DDED5005617D4 /* Assets.xcassets */,
+				D15FC26B2C7DDED5005617D4 /* LaunchScreen.storyboard */,
+				D15FC26E2C7DDED5005617D4 /* Info.plist */,
+				D15FC2662C7DDECE005617D4 /* KeKaTest.xcdatamodeld */,
+			);
+			path = KeKaTest;
+			sourceTree = "<group>";
+		};
+		D15FC2762C7DDED7005617D4 /* KeKaTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				D15FC2772C7DDED7005617D4 /* KeKaTestTests.swift */,
+			);
+			path = KeKaTestTests;
+			sourceTree = "<group>";
+		};
+		D15FC2802C7DDED7005617D4 /* KeKaTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D15FC2812C7DDED7005617D4 /* KeKaTestUITests.swift */,
+				D15FC2832C7DDED7005617D4 /* KeKaTestUITestsLaunchTests.swift */,
+			);
+			path = KeKaTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D15FC2592C7DDECE005617D4 /* KeKaTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D15FC2872C7DDED7005617D4 /* Build configuration list for PBXNativeTarget "KeKaTest" */;
+			buildPhases = (
+				D15FC2562C7DDECE005617D4 /* Sources */,
+				D15FC2572C7DDECE005617D4 /* Frameworks */,
+				D15FC2582C7DDECE005617D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeKaTest;
+			productName = KeKaTest;
+			productReference = D15FC25A2C7DDECE005617D4 /* KeKaTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D15FC2722C7DDED7005617D4 /* KeKaTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D15FC28A2C7DDED7005617D4 /* Build configuration list for PBXNativeTarget "KeKaTestTests" */;
+			buildPhases = (
+				D15FC26F2C7DDED7005617D4 /* Sources */,
+				D15FC2702C7DDED7005617D4 /* Frameworks */,
+				D15FC2712C7DDED7005617D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D15FC2752C7DDED7005617D4 /* PBXTargetDependency */,
+			);
+			name = KeKaTestTests;
+			productName = KeKaTestTests;
+			productReference = D15FC2732C7DDED7005617D4 /* KeKaTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D15FC27C2C7DDED7005617D4 /* KeKaTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D15FC28D2C7DDED7005617D4 /* Build configuration list for PBXNativeTarget "KeKaTestUITests" */;
+			buildPhases = (
+				D15FC2792C7DDED7005617D4 /* Sources */,
+				D15FC27A2C7DDED7005617D4 /* Frameworks */,
+				D15FC27B2C7DDED7005617D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D15FC27F2C7DDED7005617D4 /* PBXTargetDependency */,
+			);
+			name = KeKaTestUITests;
+			productName = KeKaTestUITests;
+			productReference = D15FC27D2C7DDED7005617D4 /* KeKaTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D15FC2522C7DDECE005617D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D15FC2592C7DDECE005617D4 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D15FC2722C7DDED7005617D4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D15FC2592C7DDECE005617D4;
+					};
+					D15FC27C2C7DDED7005617D4 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D15FC2592C7DDECE005617D4;
+					};
+				};
+			};
+			buildConfigurationList = D15FC2552C7DDECE005617D4 /* Build configuration list for PBXProject "KeKaTest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D15FC2512C7DDECE005617D4;
+			productRefGroup = D15FC25B2C7DDECE005617D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D15FC2592C7DDECE005617D4 /* KeKaTest */,
+				D15FC2722C7DDED7005617D4 /* KeKaTestTests */,
+				D15FC27C2C7DDED7005617D4 /* KeKaTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D15FC2582C7DDECE005617D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13985DC2C7E6D1500FDC28C /* Main.storyboard in Resources */,
+				D15FC26A2C7DDED5005617D4 /* Assets.xcassets in Resources */,
+				D15FC26D2C7DDED5005617D4 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15FC2712C7DDED7005617D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15FC27B2C7DDED7005617D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D15FC2562C7DDECE005617D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14036C12C7E3DB10023696B /* ApiService.swift in Sources */,
+				D15FC2682C7DDECE005617D4 /* KeKaTest.xcdatamodeld in Sources */,
+				D14036C52C7E3FD70023696B /* ArticleViewModel.swift in Sources */,
+				D15FC25E2C7DDECE005617D4 /* AppDelegate.swift in Sources */,
+				D1BEDB402C7E43E700305BB3 /* CoreDataManager.swift in Sources */,
+				D116F1752C7E454E00621BC6 /* Reachability.swift in Sources */,
+				D15FC2602C7DDECE005617D4 /* SceneDelegate.swift in Sources */,
+				D116F1772C7E65F700621BC6 /* ArticleUIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15FC26F2C7DDED7005617D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15FC2782C7DDED7005617D4 /* KeKaTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15FC2792C7DDED7005617D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D15FC2842C7DDED7005617D4 /* KeKaTestUITestsLaunchTests.swift in Sources */,
+				D15FC2822C7DDED7005617D4 /* KeKaTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D15FC2752C7DDED7005617D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D15FC2592C7DDECE005617D4 /* KeKaTest */;
+			targetProxy = D15FC2742C7DDED7005617D4 /* PBXContainerItemProxy */;
+		};
+		D15FC27F2C7DDED7005617D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D15FC2592C7DDECE005617D4 /* KeKaTest */;
+			targetProxy = D15FC27E2C7DDED7005617D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D13985DA2C7E6D1500FDC28C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D13985DB2C7E6D1500FDC28C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D15FC26B2C7DDED5005617D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D15FC26C2C7DDED5005617D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D15FC2852C7DDED7005617D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D15FC2862C7DDED7005617D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D15FC2882C7DDED7005617D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QHC4D3JAN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeKaTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KEKA.KeKaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D15FC2892C7DDED7005617D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QHC4D3JAN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KeKaTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KEKA.KeKaTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D15FC28B2C7DDED7005617D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QHC4D3JAN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KEKA.KeKaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeKaTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeKaTest";
+			};
+			name = Debug;
+		};
+		D15FC28C2C7DDED7005617D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QHC4D3JAN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KEKA.KeKaTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeKaTest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KeKaTest";
+			};
+			name = Release;
+		};
+		D15FC28E2C7DDED7005617D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QHC4D3JAN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KEKA.KeKaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeKaTest;
+			};
+			name = Debug;
+		};
+		D15FC28F2C7DDED7005617D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QHC4D3JAN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.KEKA.KeKaTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KeKaTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D15FC2552C7DDECE005617D4 /* Build configuration list for PBXProject "KeKaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15FC2852C7DDED7005617D4 /* Debug */,
+				D15FC2862C7DDED7005617D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D15FC2872C7DDED7005617D4 /* Build configuration list for PBXNativeTarget "KeKaTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15FC2882C7DDED7005617D4 /* Debug */,
+				D15FC2892C7DDED7005617D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D15FC28A2C7DDED7005617D4 /* Build configuration list for PBXNativeTarget "KeKaTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15FC28B2C7DDED7005617D4 /* Debug */,
+				D15FC28C2C7DDED7005617D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D15FC28D2C7DDED7005617D4 /* Build configuration list for PBXNativeTarget "KeKaTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D15FC28E2C7DDED7005617D4 /* Debug */,
+				D15FC28F2C7DDED7005617D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D15FC2662C7DDECE005617D4 /* KeKaTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D15FC2672C7DDECE005617D4 /* KeKaTest.xcdatamodel */,
+			);
+			currentVersion = D15FC2672C7DDECE005617D4 /* KeKaTest.xcdatamodel */;
+			path = KeKaTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D15FC2522C7DDECE005617D4 /* Project object */;
+}
