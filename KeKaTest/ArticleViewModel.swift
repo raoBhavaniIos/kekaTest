@@ -39,13 +39,18 @@ class ArticlesViewModel: ObservableObject {
             }
         }
     }
+    func DeleteTask(at indexSet: IndexSet) {
+        indexSet.map { number in
+            articles.remove(at: number)
+        }
+    }
 }
-
 struct ArticleDisplay {
     let title: String
     let abstract: String
     let publicationDate: String
     let image: Data?
+//    let id : ObjectIdentifier?
     init <T>(_ article: T){
         if let identifier = article as? ArticleResponse {
             self.title = identifier.headline.main
@@ -63,7 +68,17 @@ struct ArticleDisplay {
             self.title = (article as! Article).title ?? ""
             self.abstract = (article as! Article).abstractText ?? ""
             self.publicationDate = DateFormatter.displayFormat.string(from: (article as! Article).publicationDate ?? Date())
+//            self.id = (article as! Article).id
             self.image = (article as! Article).image
         }
     }
+    
+//    func getArticle(){
+//        let article: Article = Article()
+//        article.title = self.title
+//        article.abstractText = self.abstract
+//        article.image = self.image
+//        article.publicationDate = self.publicationDate!
+//        article.id = self.id!
+//    }
 }

@@ -51,6 +51,15 @@ class CoreDataManager {
             return []
         }
     }
+    func DeleteRecord(article:Article){
+        let context = container.viewContext
+        context.delete(article)
+        do {
+            try context.save()
+        } catch {
+            print("Failed to save article: \(error)")
+        }
+    }
 }
 
 extension DateFormatter {
